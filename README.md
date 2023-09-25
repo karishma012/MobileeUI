@@ -10,7 +10,7 @@ To get started with the application, you will need to follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/karishma012/MobileeUI/edit/main/README.md
+git clone https://github.com/karishma012/MobileeUI
 ```
 
 2. Install the dependencies:
