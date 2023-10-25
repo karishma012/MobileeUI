@@ -4,10 +4,10 @@ import CardArea from "../Components/CardArea";
 
 function Discover() {
   return (
-    <>
+    <React.Fragment>
       <Header />
       <CardArea />
-    </>
+    </React.Fragment>
   );
 }
 

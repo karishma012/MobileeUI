@@ -1,21 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Discover from './Pages/Discover';
-import CardArea from './Components/CardArea';
-import Details from './Pages/Details'; 
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Discover from "./Pages/Discover";
+import Details from "./Pages/Details";
+import Cart from "./Pages/MyCart"; // Import the AddToCart component
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" exact>
-          <Discover />
-        </Route>
-        <Route path="/details/:id">
-          <Details />
-        </Route>
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Discover />}></Route>
+        <Route path="/details/:id" element={<Details />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
